@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+
+<body>
+    <h1>Course Registration Form</h1>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td><label for="fn">First Name</label></td>
+                    <td><input type="text" name="fn" id="fn" placeholder="Ex: Preetika" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="sn">SurName</label> </td>
+                    <td><input type="text" name="sn" id="sn" placeholder="Ex: K"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobno">Mobile Number</label></td>
+                    <td><input type="tel" name="mobno" id="mobno" placeholder="Ex: 1234567890" required></td>
+                </tr>
+                <tr>
+                    <td><label for="eid">Email id</label></td>
+                    <td><input type="email" name="eid" id="eid" placeholder="Ex: xyz@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password" name="pass" id="pass" placeholder="min * character" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" name="dob" id="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number" name="age" id="age" min="18" max="60" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gen">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gen" id="gen" value="Male">Male
+                        <input type="radio" name="gen" id="gen" value="Female">Female
+                        <input type="radio" name="gen" id="gen" value="Others">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="coun">Select Country</label></td>
+                    <td>
+                        <select name="coun" id="coun">
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Germany">Germany</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="file">Upload Photo</label></td>
+                    <td><input type="file" name="file" id="file"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <Br>
+
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                    <td><label for="scourse">Select Course</label></td>
+                    <td>
+                        <select name="scourse" id="scourse">
+                            <option value="Python Fullstack">Python Full Stack</option>
+                            <option value="Java Fullstack">Java Fullstack</option>
+                            <option value="Data Science">Data Science</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mode">Mode</label></td>
+                    <td>
+                        <input type="radio" name="mode" id="mode" value="Online">Online
+                        <input type="radio" name="mode" id="mode" value="Offline">Offline
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ins">Institude Name</label></td>
+                    <td><input type="text" name="ins" id="ins"></td>
+                </tr>
+                <tr>
+                    <td><label for="knowledge">Choose your present Coding knowledge level:</label></td>
+                    <td><input type="range" name="knowledge" id="knowledge"></td>
+                </tr>
+                <tr>
+                    <td><label for="comment">Comments</label></td>
+                    <td><textarea name="comment" id="comment"></textarea></td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+        <br>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
